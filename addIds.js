@@ -2,7 +2,7 @@ const fs = require('fs');
 const { JSDOM } = require('jsdom');
 
 // Read the HTML file
-fs.readFile('index.html', 'utf8', (err, data) => {
+fs.readFile('alice/index.html', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
@@ -24,7 +24,7 @@ fs.readFile('index.html', 'utf8', (err, data) => {
   const updatedHTML = dom.serialize();
 
   // Write the updated HTML to a new file
-  fs.writeFile('output.html', updatedHTML, (err) => {
+  fs.writeFile('alice/index.html', updatedHTML, (err) => {
     if (err) {
       console.error(err);
       return;
