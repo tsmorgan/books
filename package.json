@@ -1,0 +1,14 @@
+{
+  "name": "afterlondon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "addIds.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^25.0.1"
+  }
+}
