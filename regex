@@ -1,8 +1,0 @@
-
-this will search for lines where text should run on
-
-([^>])\n([^<\s])
-
-Replace with 
-
-$1 $2
