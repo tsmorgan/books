@@ -1,8 +1,13 @@
 const fs = require('fs');
 const { JSDOM } = require('jsdom');
 
+/* Just edit this line */
+let book = 'witw';
+
+
+
 // Read the HTML file
-fs.readFile('oz/index.html', 'utf8', (err, data) => {
+fs.readFile(book+'/index.html', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
@@ -24,7 +29,7 @@ fs.readFile('oz/index.html', 'utf8', (err, data) => {
   const updatedHTML = dom.serialize();
 
   // Write the updated HTML to a new file
-  fs.writeFile('oz/index.html', updatedHTML, (err) => {
+  fs.writeFile(book+'/index.html', updatedHTML, (err) => {
     if (err) {
       console.error(err);
       return;
