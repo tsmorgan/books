@@ -75,3 +75,14 @@ const cookieName = book + "_lastVisibleElement";
   document.querySelectorAll('p').forEach((el) => {
     observer.observe(el);
   });
+
+  // add nav links
+  const htmlChunk = `
+    <div id="retcon">
+        <a href="#Contents" class="pginternal"> Contents </a>
+        <a href="../" class="pginternal"> Index </a>
+    </div>`;
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.insertAdjacentHTML("afterbegin", htmlChunk);
+});
