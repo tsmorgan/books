@@ -1,3 +1,5 @@
+  console.log(book);
+
   // v2
   // Function to set a cookie
   function setCookie(name, value, days) {
@@ -22,9 +24,11 @@
     return null;
   }
 
+const cookieName = book + "_lastVisibleElement";
+
   // Scroll back to the last visible section if the cookie exists
   window.onload = function () {
-    const lastVisibleElementId = getCookie('lastVisibleElement');
+    const lastVisibleElementId = getCookie(cookieName);
     if (lastVisibleElementId) {
       const element = document.getElementById(lastVisibleElementId);
       if (element) {
@@ -58,7 +62,7 @@
       {
         topid = topMostVisible.id;
         // Store the top-most visible element's ID in the cookie
-        setCookie('lastVisibleElement', topMostVisible.id, 1);
+        setCookie(cookieName, topMostVisible.id, 1);
         console.log("setting",topMostVisible.id);
       }
     }
