@@ -1,5 +1,3 @@
-
-
 # steps
 
 ## step one
@@ -8,13 +6,25 @@ Use this regex to search for lines where text should run on
 
 `([^>])\n([^<\s])`
 
-and replace with 
+and replace with
 
 `$1 $2`
 
 ## step two
 
 Add the `<style>` and `<script>` tags from the other indexes.
+
+In the head
+
+```
+<link rel="stylesheet" type="text/css" href="../style.css">
+```
+
+At the end of the body
+
+```
+<script src="../script.js"></script>
+```
 
 ## step three
 
