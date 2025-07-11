@@ -29,10 +29,10 @@ At the end of the body
 
 Add `id="Contents"` to an elments near the contents.
 
-## step three
+## step three
 
 Edit the `addIds.js` file and run it to add id attributes to all the `<p>` tags so the cookie stuff will work.
 
-## step four
+## step four
 
 Remove anything else that isn't wanted.
