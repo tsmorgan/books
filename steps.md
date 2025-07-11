@@ -23,6 +23,7 @@ In the head
 At the end of the body
 
 ```
+<script>var book = "<book_name>";</script>
 <script src="../script.js"></script>
 ```
 
